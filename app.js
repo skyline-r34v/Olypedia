@@ -3,8 +3,8 @@ const app = express();
 const ticketRouter = require('./routes/ticket')
 const preRouter = require('./routes/preolym')
 const eveRouter = require('./routes/eve')
-const venueRouter = require('./routes/venue')
-const statsRouter = require('./routes/stats')
+const staticsRouter = require('./routes/statics')
+const aboutRouter = require('./routes/about')
 
 app.get('/' , (req,res) => {
     res.send({"v" : "m"});
@@ -12,7 +12,10 @@ app.get('/' , (req,res) => {
 app.use('/ticket' , ticketRouter);
 app.use('/preolym', preRouter);
 app.use('/eve' , eveRouter);
-app.use('/eve/venue' , venueRouter);
-app.use('/stats' , statsRouter);
+//app.use('/eve/venue' , venueRouter);
+app.use('/statics' , staticsRouter);
+app.use('/about' , aboutRouter);
 
-app.listen(3000);
+app.listen(3000, () => {
+    console.log("Connected at Port 3000")
+});
