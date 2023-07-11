@@ -13,9 +13,7 @@ router.get('/sortcountry', (req,res) =>
 {
       res.send("sort by country")
 });
-router.get('/venue',(req,res) => {
-      res.send("Venue Page")
-})
+
 //sort by country -->
 router.get("/sortcountry/:myparam", async (req, res) => {
       const myParam = req.params.myparam;
