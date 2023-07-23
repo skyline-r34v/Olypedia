@@ -7,12 +7,15 @@ const eveRouter = require('./Server/routes/eve')
 const staticsRouter = require('./Server/routes/statics')
 const aboutRouter = require('./Server/routes/about')
 const athRouter =require('./Server/routes/ath')
+const bodyParser = require('body-parser')
 const dotenv = require('dotenv')
 
 dotenv.config({ path:'config.env'})
 const PORT = process.env.PORT||
 
 app.use(morgan("combined"))
+app.use(bodyParser.urlencoded({extended:true}));
+
 app.get('/' , (req,res) => {
     res.send({"v" : "m"});
 });
