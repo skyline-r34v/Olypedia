@@ -2,15 +2,19 @@
   "name": "olypedia",
   "version": "1.0.0",
   "description": "Project Work",
-  "main": "app.js",
+  "main": "server.js",
   "scripts": {
-    "start": "node app.js",
-    "winserver": "node app.js" 
+    "start": "node server.js",
+    "winserver": "node app.js"
   },
-  "author": "",
+  "author": "Vighnesh Mishra",
   "license": "ISC",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.18.2"
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.0",
+    "morgan": "^1.10.0"
   }
 }
