@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olypedia</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Caprasimo&family=Dancing+Script:wght@700&family=Fasthand&family=Inter:wght@200;300;400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+
+
+    <!-- scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="box-border font-Montserrat font-[400] bg-gray-50  " style="font-family:'Inter', sans-serif;">
+
+    <svg class="absolute w-[50%] right-0 top-10 left-100 -z-10" width="893" height="1500" viewBox="0 0 893 1500"
+        fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g opacity="0.5" filter="url(#filter0_f_2_810)">
+            <circle cx="750" cy="750" r="250" fill="#FACD49" />
+        </g>
+        <defs>
+            <filter id="filter0_f_2_810" x="0" y="0" width="1500" height="1500" filterUnits="userSpaceOnUse"
+                color-interpolation-filters="sRGB">
+                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
+                <feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_2_810" />
+            </filter>
+        </defs>
+    </svg>
+    <img class="absolute pointer-events-none" src="./assets/Ellipse 23.svg" alt="">
+    <header class=" px-20 py-8 max-[492px]:px-5 max-[425px]:py-4 min-[1441px]:px-52">
+        <nav class="w-full mx-0 my-auto  flex items-center justify-between ">
+            <div class="flex">
+                <div class="cursor-pointer pt-4 pr-1  hidden max-[640px]:pt-6 max-[990px]:block max-sm:pr-0 "> <button
+                        id="dropDownbtn" onclick="Open()"
+                        class="fa-solid fa-bars text-[#5D50C6] toggle-btn text-3xl max-sm:text-xl "></button>
+                </div>
+                <div class=" max-[490px]:mr-16 max-[375px]:mr-6 "> <img src="./assets/image 1.png" alt="Logo"
+                        width="150rem">
+
+                </div>
+            </div>
+
+
+
+            <ul
+                class=" flex gap-x-16 font-[700] text-xs shrink-[10] text-gray-600 max-[990px]:hidden  min-[1135px]:text-[1rem] min-[1441px]:text-lg  ">
+                <li
+                    class="list-none hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]">
+                    <a class="no-underline" href="index.html">Home </a>
+                </li>
+                <li
+                    class="list-none  hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]">
+                    <a class="no-underline" href="#Today">Events</a>
+                </li>
+
+                <li
+                    class="list-none  hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]">
+                    <a class="no-underline" href="#Highlights">Highlights</a>
+                </li>
+                <li
+                    class="list-none  hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]">
+                    <a href="pre0lympic.html"> PastOlympics</a>
+                </li>
+
+                <li class="list-none  "> <a
+                        class=" hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]"
+                        href="#Athletes">Athletes</a></li>
+            </ul>
+
+            <button
+                class="bg-[#5D50C6] text-gray-100  px-4 py-2 text-sm font-semibold outline-none rounded-3xl cursor-pointer active:scale-[0.95] hover:scale-[1.05] hover:text-[#5D50C6] hover:bg-gray-50 hover:border-[#5D50C6] hover:border-[1px] min-[1135px]:text-[1.2rem] min-w-[8rem] max-sm:min-w-[7rem]  max-[391px]:px-0 max-[391px]:text-xs min-[1441px]:text-lg min-[1441px]:hover:text-[1.35rem] Tickets transition-all"><a
+                    href="#Tickets">Book Tickets</a></button>
+
+        </nav>
+
+
+        <div class="absolute dropDownMenu   mt-2 hidden z-[1] ">
+            <ul
+                class=" box-border min-w-[80vw]  flex flex-col py-2 bg-[#FCE3DC] min-[990px]:hidden  transition-height duration-200 ease-cubic-bezier justify-center items-center gap-y-2 font-[500] text-sm  text-gray-600 bg-gradient-to-r from-[#FCE3DC] to-[#fff] w-[20rem] rounded-lg backdrop-blur-lg     ">
+                <li class="list-none hover:text-purple-800 hover:font-bold hover:text-xl "> <a class="no-underline"
+                        href="index.html">Home </a></li>
+                <li class="list-none  hover:text-purple-800 hover:font-bold hover:text-xl"> <a class="no-underline"
+                        href="#Today">Events</a></li>
+
+                <li class="list-none  hover:text-purple-800 hover:font-bold hover:text-xl"> <a class="no-underline"
+                        href="#Highlights">Highlights</a></li>
+                <li class="list-none  hover:text-purple-800 hover:font-bold hover:text-xl">
+                    <a href="pre0lympic.html"> PastOlympics</a>
+                </li>
+
+                <li class="list-none  "> <a class=" hover:text-purple-800 hover:font-bold hover:text-xl"
+                        href="#Athletes">Athletes</a></li>
+
+                <button
+                    class="bg-[#5D50C6] text-gray-100 shrink-[11] px-2 py-1 text-lg font-semibold outline-none rounded-3xl cursor-pointer active:scale-[0.95] hover:scale-[1.05] hover:text-[#5D50C6] hover:bg-gray-50 hover:border-[#5D50C6] hover:border-[1px] w-[80%] transition-all"><a
+                        href="#Tickets">Book Tickets</a></button>
+            </ul>
+        </div>
+
+    </header>
+
+    <main class="mx-[15%]">
+        <div class="flex flex-col box-border justify-center content-center  my-[15vh]  sm:flex-row ">
+            <div class="basis-1/2 text-3xl min-[850px]:text-5xl max-sm:mb-10 font-bold self-center justify-self-center  ">
+                <h2  style="background: linear-gradient(to right, rgba(229, 20, 20, 1), rgba(99, 72, 207, 1), rgba(237, 242, 0, 1), rgba(23, 154, 19, 1));
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;">RIO <br> OLYMPICS 2016</h2>
+            </div>
+            <div class="basis-1/2"><img src="./assets/brazil/Group 9271.png" alt=""></div>
+        </div>
+
+
+        <div class="flex flex-col max-sm:max-h-[100vh] sm:flex-row gap-x-10">
+            <div class="basis-1/2 self-center ">
+                <img src="./assets/brazil/image 19.png" alt="">
+            </div>
+            <div class="basis-1/2">
+                <h3 class="uppercase font-extrabold text-xl text-center">About the games</h3>
+                <h5 class="font-semibold text-center"> Space for Peak Performances</h5>
+                <p class="text-xs">
+                    <br>
+
+                   
+
+The Rio 2016 Games provided the best possible environment for peak performances. Athletes enjoyed world-class facilities, including a superb village, all located in one of the world’s most beautiful cities, in a compact layout for maximum convenience.
+Compact Layout
+<br><br>
+
+The competition venues were clustered in four zones—Barra, Copacabana, Deodoro and Maracanã—and connected by a high-performance transport ring. Nearly half of the athletes could reach their venues in less than 10 minutes, and almost 75 per cent could do so in less than 25 minutes.
+
+
+                </p>
+            </div>
+
+            
+        </div>
+        <div class="max-sm:py-[50%] sm:py-[20%] max-sm:-mx-[10%]">
+            <h4 class="font-extrabold mb-4">MEDAL TABLE</h4>
+            <div class="flex flex-col  sm:flex-row-reverse">
+                
+                <div class="basis-1/3 self-center max-sm:w-[50vw]">
+                 <img src="./assets/brazil/image 18.png" alt="">
+                </div>
+                <div class="basis-2/3 self-center ">
+                    <table class="max-w-[100vw] grid grid-rows-1 ">
+                        <thead class=" row-span-1 start-0 gap-x-4 max-w-[100vw]">
+                          <tr class="text-sm flex gap-x-4">
+                            <th class="basis-1/5">Country</th>
+                            <th class="basis-1/5">Gold</th>
+                            <th class="basis-1/5">Silver</th>
+                            <th class="basis-1/5">Bronze</th>
+                            <th class="basis-1/5">Total</th>
+                          </tr>
+                        </thead>
+                        <tbody class="grid grid-rows-6">
+                            <tr class="text-sm flex gap-x-4 text-center">
+                                <td class="basis-1/5">Algeria</td>
+                                <td class="basis-1/5">-</td>
+                                <td class="basis-1/5">2</td>
+                                <td class="basis-1/5">-</td>
+                                <td class="basis-1/5">2</td>
+                            </tr>
+                            <tr class="text-sm flex gap-x-4 text-center">
+                                <td class="basis-1/5">Algeria</td>
+                                <td class="basis-1/5">-</td>
+                                <td class="basis-1/5">2</td>
+                                <td class="basis-1/5">-</td>
+                                <td class="basis-1/5">2</td>
+                            </tr>
+                            <tr class="text-sm flex gap-x-4 text-center">
+                                <td class="basis-1/5">Algeria</td>
+                                <td class="basis-1/5">-</td>
+                                <td class="basis-1/5">2</td>
+                                <td class="basis-1/5">-</td>
+                                <td class="basis-1/5">2</td>
+                            </tr>
+                            <tr class="text-sm flex gap-x-4 text-center">
+                                <td class="basis-1/5">Algeria</td>
+                                <td class="basis-1/5">-</td>
+                                <td class="basis-1/5">2</td>
+                                <td class="basis-1/5">-</td>
+                                <td class="basis-1/5">2</td>
+                            </tr>
+                            <tr class="text-sm flex gap-x-4 text-center">
+                                <td class="basis-1/5">Algeria</td>
+                                <td class="basis-1/5">-</td>
+                                <td class="basis-1/5">2</td>
+                                <td class="basis-1/5">-</td>
+                                <td class="basis-1/5">2</td>
+                            </tr>
+                         
+                        </tbody>
+                      </table>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="pb-16">
+            <img src="./assets/brazil/Group 9273.png" alt="">
+        </div>
+    </main>
+
+
+    <script src="toogle.js"></script>
+
+</body>
+
+</html>
