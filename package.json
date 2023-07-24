@@ -1,21 +1,18 @@
 {
-  "name": "olypedia",
+  "name": "olympedia",
   "version": "1.0.0",
-  "description": "Project Work",
-  "main": "server.js",
+  "description": "Vighnesh",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "winserver": "node app.js"
+    "start": "vite"
   },
-  "author": "Vighnesh Mishra",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.20.2",
-    "cors": "^2.8.5",
-    "dotenv": "^16.3.1",
-    "express": "^4.18.2",
-    "mongodb": "^5.7.0",
-    "mongoose": "^7.4.0",
-    "morgan": "^1.10.0"
+  "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "^8.4.25",
+    "tailwindcss": "^3.3.2",
+    "vite": "^4.4.2"
   }
 }
