@@ -10,14 +10,14 @@ router.get('/london', (req,res) =>
 {
       res.sendFile(path.join(__dirname,"../public/london2012.html"))
 });
-router.get('/brazil', (req,res) =>
+router.get('/rio', (req,res) =>
 {
-      res.send("Brazil 2016")
+      res.sendFile(path.join(__dirname,"../public/rio2016.html"))
 });
 
 router.get('/tokyo', (req,res) =>
 {
-      res.send("Tokyo 2020")
+      res.sendFile(path.join(__dirname,"../public/tokyo2020.html"))
 });
 router.use(express.static('public'))
 module.exports = router;
