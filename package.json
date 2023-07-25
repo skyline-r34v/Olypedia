@@ -4,7 +4,7 @@
   "description": "Vighnesh",
   "main": "index.js",
   "scripts": {
-    "start": "vite"
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -14,5 +14,13 @@
     "postcss": "^8.4.25",
     "tailwindcss": "^3.3.2",
     "vite": "^4.4.2"
+  },
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "mongodb": "^5.7.0",
+    "mongoose": "^7.4.1",
+    "morgan": "^1.10.0"
   }
 }
