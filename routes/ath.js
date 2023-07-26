@@ -12,11 +12,11 @@ router.get("/:myAth", async (req, res) => {
     if (myAth === "fb_mexM") {
         res.send("fb_mexM");
     } 
-    else if (myAth === "fB_japM") {
-        res.send("fB_japM");
+    else if (myAth === "fb_japM") {
+        res.send("fb_japM");
     } 
-    else if (myAth === "fB_korM") {
-          res.send("fB_korM");
+    else if (myAth === "fb_korM") {
+          res.send("fb_korM");
       }
       else if (myAth === "fb_newM") {
         res.send("fb_newM");
@@ -24,17 +24,17 @@ router.get("/:myAth", async (req, res) => {
     else if (myAth === "fb_coteM") {
           res.send("fb_coteM");
       }
-      else if (myAth === "fB_egyM") {
-        res.send("fB_egyM");
+      else if (myAth === "fb_egyM") {
+        res.send("fb_egyM");
     } 
     else if (myAth === "fb_gerM") {
           res.send("fb_gerM");
       }
     
-    else if (myAth === "fB_argM") {
+    else if (myAth === "fb_argM") {
         res.send("fb_argM");
     } 
-    else if (myAth === "fB_romM") {
+    else if (myAth === "fb_romM") {
           res.send("fB_romM");
       }
       else if (myAth === "fb_ausM") {
@@ -43,8 +43,8 @@ router.get("/:myAth", async (req, res) => {
     else if (myAth === "fb_fraM") {
           res.send("fb_fraM");
       }
-      else if (myAth === "fB_honM") {
-        res.send("fB_honM");
+      else if (myAth === "fb_honM") {
+        res.send("fb_honM");
     } 
     else if (myAth === "fb_sauArM") {
           res.send("fb_sauArM");
@@ -59,11 +59,11 @@ router.get("/:myAth", async (req, res) => {
         res.send("fb_braM");
     }
   //athprofile football women
-  else if (myAth === "fB_canW") {
+  else if (myAth === "fb_canW") {
       res.send("fb_canW");
   } 
-  else if (myAth === "fB_sweW") {
-        res.send("fB_sweW");
+  else if (myAth === "fb_sweW") {
+        res.send("fb_sweW");
     }
   else if (myAth === "fb_uniW") {
       res.send("fb_uniW");
@@ -71,8 +71,8 @@ router.get("/:myAth", async (req, res) => {
   else if (myAth === "fb_ausW") {
         res.send("fb_ausW");
     }
- else if (myAth === "fB_netW") {
-      res.send("fB_netW");
+ else if (myAth === "fb_netW") {
+      res.send("fb_netW");
   } 
  else if (myAth === "fb_braW") {
         res.send("fb_braW");
