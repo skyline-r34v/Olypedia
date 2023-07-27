@@ -253,9 +253,7 @@ else if (myAth === "beachvolleyball") {
 else if (myAth === "waterpolo") {
     res.send("waterpolo");
 }
-else if (myAth === "waterpolo") {
-    res.send("waterpolo");
-}
+
 //hockey
 else if (myAth === "hk_belM") {
     res.send("hk_belM");
