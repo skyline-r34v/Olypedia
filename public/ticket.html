@@ -32,7 +32,7 @@
 <body class="box-border font-Montserrat font-[400] bg-gray-50  " style="font-family:'Inter', sans-serif;">
    
     
-    <img class="absolute pointer-events-none" src="./assets/Ellipse 23.svg" alt="">
+    <img class="absolute pointer-events-none" src="Ellipse 23.svg" alt="">
 
     <header class=" px-20 py-8 max-[492px]:px-5 max-[425px]:py-4 min-[1441px]:px-52">
       <nav class="w-full mx-0 my-auto  flex items-center justify-between ">
@@ -41,7 +41,7 @@
                       id="dropDownbtn" onclick="Open()"
                       class="fa-solid fa-bars text-[#5D50C6] toggle-btn text-3xl max-sm:text-xl "></button>
               </div>
-              <div class=" max-[490px]:mr-16 max-[375px]:mr-6 "> <img src="./assets/image 1.png" alt="Logo"
+              <div class=" max-[490px]:mr-16 max-[375px]:mr-6 "> <img src="image 1.png" alt="Logo"
                       width="150rem">
 
               </div>
@@ -53,28 +53,28 @@
               class=" flex gap-x-16 font-[700] text-xs shrink-[10] text-gray-600 max-[990px]:hidden  min-[1135px]:text-[1rem] min-[1441px]:text-lg  ">
               <li
                   class="list-none hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]">
-                  <a class="no-underline" href="index.html">Home </a></li>
+                  <a class="no-underline" href="/">Home </a></li>
               <li
                   class="list-none  hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]">
-                  <a class="no-underline" href="comingsoon.html" target="_blank">Events</a></li>
+                  <a class="no-underline" href="/eve" target="_blank">Events</a></li>
 
              
               <li
                   class="list-none  hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]">
-                  <a href="pre0lympic.html"> PastOlympics</a>
+                  <a href="/preolym"> Past Olympics</a>
               </li>
 
               <li class="list-none  "> <a
                       class=" hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]"
-                      href="authprofile.html">Athletes</a></li>
+                      href="/athprofile">Athletes</a></li>
                       <li
                       class="list-none  hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]">
-                      <a class="no-underline" href="aboutoly.html">AboutOlympics/a></li>
+                      <a class="no-underline" href="/about">About Olympics/a></li>
           </ul>
 
           <button
               class="bg-[#5D50C6] text-gray-100  px-4 py-2 text-sm font-semibold outline-none rounded-3xl cursor-pointer active:scale-[0.95] hover:scale-[1.05] hover:text-[#5D50C6] hover:bg-gray-50 hover:border-[#5D50C6] hover:border-[1px] min-[1135px]:text-[1.2rem] min-w-[8rem] max-sm:min-w-[7rem]  max-[391px]:px-0 max-[391px]:text-xs min-[1441px]:text-lg min-[1441px]:hover:text-[1.35rem] Tickets"><a
-                  href="tikcet1.html">Book Tickets</a></button>
+                  href="/ticket">Book Tickets</a></button>
 
       </nav>
 
@@ -83,23 +83,23 @@
           <ul
               class=" flex flex-col box-border min-w-[80vw] py-2 bg-[#FCE3DC] min-[990px]:hidden  transition-height duration-200 ease-cubic-bezier justify-center items-center gap-y-2 font-[500] text-sm  text-gray-600 bg-gradient-to-r from-[#FCE3DC] to-[#fff] w-[20rem] rounded-lg backdrop-blur-lg     ">
               <li class="list-none hover:text-purple-800 hover:font-bold hover:text-xl "> <a class="no-underline"
-                      href="index.html">Home </a></li>
+                      href="/">Home </a></li>
               <li class="list-none  hover:text-purple-800 hover:font-bold hover:text-xl"> <a class="no-underline"
-                      href="comingsoon.html" target="_blank">Events</a></li>
+                      href="/eve" target="_blank">Events</a></li>
 
               <li class="list-none  hover:text-purple-800 hover:font-bold hover:text-xl">
-                  <a href="pre0lympic.html"> PastOlympics</a>
+                  <a href="/preolym"> Past Olympics</a>
               </li>
 
               <li class="list-none  "> <a class=" hover:text-purple-800 hover:font-bold hover:text-xl"
-                      href="authprofile.html">Athletes</a></li>
+                      href="/athprofile">Athletes</a></li>
                       
               <li class="list-none  hover:text-purple-800 hover:font-bold hover:text-xl"> <a class="no-underline"
-                href="aboutoly.html">AboutOlympics</a></li>
+                href="/about">About Olympics</a></li>
 
               <button
                   class="bg-[#5D50C6] text-gray-100 shrink-[11] px-2 py-1 text-lg font-semibold outline-none rounded-3xl cursor-pointer active:scale-[0.95] hover:scale-[1.05] hover:text-[#5D50C6] hover:bg-gray-50 hover:border-[#5D50C6] hover:border-[1px] w-[80%]"><a
-                      href="tikcet1.html">Book Tickets</a></button>
+                      href="/ticket">Book Tickets</a></button>
           </ul>
       </div>
 
@@ -238,7 +238,7 @@
           }
     
           // Replace this with the actual booking logic (e.g., API call to book tickets)
-          const payPageUrl = `https://shivam-fl.github.io/Olypedia-testing/pay.html`;
+          const payPageUrl = `http://localhost:9600/ticket/pay`;
           window.location.href = payPageUrl;
         }
 

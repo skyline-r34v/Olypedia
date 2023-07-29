@@ -4,7 +4,6 @@ const morgan = require('morgan')
 const ticketRouter = require('./routes/ticket')
 const preRouter = require('./routes/preolym')
 const eveRouter = require('./routes/eve')
-const staticsRouter = require('./routes/statics')
 const aboutRouter = require('./routes/about')
 const athRouter =require('./routes/ath')
 const bodyParser = require('body-parser')
@@ -23,8 +22,7 @@ app.get('/' , (req,res) => {
 app.use('/ticket' , ticketRouter);
 app.use('/preolym', preRouter);
 app.use('/eve' , eveRouter);
-//app.use('/eve/venue' , venueRouter);
-app.use('/statics' , staticsRouter);
+
 app.use('/about' , aboutRouter);
 app.use('/athprofile',athRouter);
 
