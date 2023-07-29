@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Caprasimo&family=Dancing+Script:wght@700&family=Fasthand&family=Inter:wght@200;300;400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+
+
+    <!-- scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        #video-container {
+           
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        #video-background {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -10;
+            opacity: 0.9;
+        }
+
+        .video {
+            z-index: -10;
+        }
+
+        /* Add additional styling for other content on top of the video */
+        .content {
+           
+            z-index: 1;
+            padding: 20px;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .progress-bar{
+            width:25rem;
+            height: 0.75rem;
+            background-color: rgb(120, 123, 125);
+            margin: auto;
+            margin-bottom: 5rem;
+            opacity: .8;
+            position: relative;
+            z-index: -1;
+        }
+
+        .progress-bar::before{
+            content: "0%";
+            position:absolute;
+            left: 0;
+            font-size: 0.75rem;
+            bottom: -1rem;
+        }
+        .progress-bar::after{
+            content: "100%";
+            position:absolute;
+            right: 0;
+            font-size: 0.75rem;
+            bottom: -1rem;
+        }
+
+        .progress-bar span{
+            display: block;
+            width: 80%;
+            height: 0.75rem;
+            background-color: rgb(211, 235, 255);
+            animation: fill 1s ease-in 1;
+        }
+
+        @keyframes fill{
+            from{
+                width: 0;
+            }
+            to{
+                width: 80%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="video-container">
+        <video id="video-background" autoplay loop muted>
+
+            <source class="video" src="./assets/video/Smoke in a black background  Free HD video footage.mp4"
+                type="video/mp4">
+
+
+        </video>
+
+        <div class="flex justify-center content-center w-[100vw] h-[100vh]">
+            <div class="content text-slate-300 text-center self-center justify-self-center flex flex-col gap-y-8 ">
+                <h1 class="text-8xl max-[850px]:text-6xl max-[600px]:text-4xl font-extrabold uppercase">Coming Soon</h1>
+                <p class="font-bold max-[850px]:text-xl max-[600px]:text-sm">UNDER CONSTRUCTION</p>
+                <div class="progress-bar max-[850px]:w-[60%]"> <span class="max-[850px]:w-[60%]"></span>
+                </div>
+
+
+                <div>
+                    <div class="flex justify-between flex-col mt-12  ">
+                        <div class="flex gap-x-4  self-center justify-self-center">
+                            <div>
+                                <a href="https://www.instagram.com/Olympics/" target="_blank"> <img class="w-[50%] " 
+                                        src="footericons/skill-icons_instagram.png" alt="" ></a>
+                            </div>
+                            <div>
+                                <a href="https://www.linkedin.com/company/international-olympic-committee/?originalSubdomain=ch"
+                                    target="_blank"> <img class="w-[50%]" src="footericons/devicon_linkedin.png"
+                                        alt=""></a>
+                            </div>
+                            <div>
+                                <a href="https://www.facebook.com/olympics/" target="_blank"> <img class="w-[50%]"
+                                        src="footericons/logos_facebook.png" alt=""></a>
+                            </div>
+                            <div>
+                                <a href="https://twitter.com/Olympics" target="_blank"> <img class="w-[50%]"
+                                        src="footericons/Vector (3).png" alt=""></a>
+                            </div>
+                        </div>
+
+                        <div class="text-center max-[850px]:text-xl max-[600px]:text-lg my-2 text-[#59a4b9]  self-center justify-self-center max-sm:my-4">
+                            <p>Copyright &copy; 2023 THECoders <br> All Rights Reserved </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</body>
+
+</html>

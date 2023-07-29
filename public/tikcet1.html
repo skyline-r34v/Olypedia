@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olypedia</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Caprasimo&family=Dancing+Script:wght@700&family=Fasthand&family=Inter:wght@200;300;400;500;600&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+
+
+
+    <!-- scripts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script defer src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+        integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+        crossorigin="anonymous"></script>
+</head>
+
+<body class="box-border font-Montserrat font-[400] bg-gray-50  " style="font-family:'Inter', sans-serif;">
+   
+    
+    <img class="absolute pointer-events-none" src="./assets/Ellipse 23.svg" alt="">
+
+    <header class=" px-20 py-8 max-[492px]:px-5 max-[425px]:py-4 min-[1441px]:px-52">
+      <nav class="w-full mx-0 my-auto  flex items-center justify-between ">
+          <div class="flex">
+              <div class="cursor-pointer pt-4 pr-1  hidden max-[640px]:pt-6 max-[990px]:block max-sm:pr-0 "> <button
+                      id="dropDownbtn" onclick="Open()"
+                      class="fa-solid fa-bars text-[#5D50C6] toggle-btn text-3xl max-sm:text-xl "></button>
+              </div>
+              <div class=" max-[490px]:mr-16 max-[375px]:mr-6 "> <img src="./assets/image 1.png" alt="Logo"
+                      width="150rem">
+
+              </div>
+          </div>
+
+
+
+          <ul
+              class=" flex gap-x-16 font-[700] text-xs shrink-[10] text-gray-600 max-[990px]:hidden  min-[1135px]:text-[1rem] min-[1441px]:text-lg  ">
+              <li
+                  class="list-none hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]">
+                  <a class="no-underline" href="index.html">Home </a></li>
+              <li
+                  class="list-none  hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]">
+                  <a class="no-underline" href="comingsoon.html" target="_blank">Events</a></li>
+
+             
+              <li
+                  class="list-none  hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]">
+                  <a href="pre0lympic.html"> PastOlympics</a>
+              </li>
+
+              <li class="list-none  "> <a
+                      class=" hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]"
+                      href="authprofile.html">Athletes</a></li>
+                      <li
+                      class="list-none  hover:text-gray-800 hover:font-bold hover:text-[1.2rem] active:text-gray-900 min-[1441px]:hover:text-[1.35rem]">
+                      <a class="no-underline" href="aboutoly.html">AboutOlympics/a></li>
+          </ul>
+
+          <button
+              class="bg-[#5D50C6] text-gray-100  px-4 py-2 text-sm font-semibold outline-none rounded-3xl cursor-pointer active:scale-[0.95] hover:scale-[1.05] hover:text-[#5D50C6] hover:bg-gray-50 hover:border-[#5D50C6] hover:border-[1px] min-[1135px]:text-[1.2rem] min-w-[8rem] max-sm:min-w-[7rem]  max-[391px]:px-0 max-[391px]:text-xs min-[1441px]:text-lg min-[1441px]:hover:text-[1.35rem] Tickets"><a
+                  href="tikcet1.html">Book Tickets</a></button>
+
+      </nav>
+
+
+      <div class="absolute dropDownMenu   mt-2 hidden z-[1] ">
+          <ul
+              class=" flex flex-col box-border min-w-[80vw] py-2 bg-[#FCE3DC] min-[990px]:hidden  transition-height duration-200 ease-cubic-bezier justify-center items-center gap-y-2 font-[500] text-sm  text-gray-600 bg-gradient-to-r from-[#FCE3DC] to-[#fff] w-[20rem] rounded-lg backdrop-blur-lg     ">
+              <li class="list-none hover:text-purple-800 hover:font-bold hover:text-xl "> <a class="no-underline"
+                      href="index.html">Home </a></li>
+              <li class="list-none  hover:text-purple-800 hover:font-bold hover:text-xl"> <a class="no-underline"
+                      href="comingsoon.html" target="_blank">Events</a></li>
+
+              <li class="list-none  hover:text-purple-800 hover:font-bold hover:text-xl">
+                  <a href="pre0lympic.html"> PastOlympics</a>
+              </li>
+
+              <li class="list-none  "> <a class=" hover:text-purple-800 hover:font-bold hover:text-xl"
+                      href="authprofile.html">Athletes</a></li>
+                      
+              <li class="list-none  hover:text-purple-800 hover:font-bold hover:text-xl"> <a class="no-underline"
+                href="aboutoly.html">AboutOlympics</a></li>
+
+              <button
+                  class="bg-[#5D50C6] text-gray-100 shrink-[11] px-2 py-1 text-lg font-semibold outline-none rounded-3xl cursor-pointer active:scale-[0.95] hover:scale-[1.05] hover:text-[#5D50C6] hover:bg-gray-50 hover:border-[#5D50C6] hover:border-[1px] w-[80%]"><a
+                      href="tikcet1.html">Book Tickets</a></button>
+          </ul>
+      </div>
+
+  </header>
+
+  <main class="mx-[10%] lg:mx-[15%]">
+  <div class="container mx-auto p-4">
+    <h1 class="text-3xl font-semibold mb-4 text-center"  style="background: linear-gradient(to right, rgba(229, 20, 20, 1), rgba(99, 72, 207, 1), rgba(237, 242, 0, 1), rgba(23, 154, 19, 1));
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;">Olympic 2024 Ticket Booking</h1>
+    <div class="flex flex-col sm:flex-row justify-between basis-1/2 my-[5%]  gap-x-20 gap-y-20 max-sm:flex-col-reverse" >
+      <div class="my-4" >
+        <h2 class="text-xl font-semibold mb-2">Events:</h2>
+        <div >
+          <h2 class="text-lg lg:text-xl font-bold text-slate-700"> Wednesday, 24 July</h2>
+          <ul class="list-disc ml-6 text-blue-600">
+            <li class="cursor-pointer" onclick="selectEvent('24/7/2024: Football')">Football: 1500-2300: M group stage (8 matches)</li>
+            <li class="cursor-pointer" onclick="selectEvent('24/7/2024: Football')">Rugby sevens: 1530-2200: M pool rounds</li>
+            
+            <!-- Add more events here -->
+          </ul>
+
+        </div>
+        <div class="my-4" >
+          <h2 class="text-lg lg:text-xl font-bold text-slate-700">Thursday, 25 July</h2>
+          <ul class="list-disc ml-6 text-blue-600">
+            <li class="cursor-pointer" onclick="selectEvent('25/7/2024: Archery')">Archery: 0930-1230: W ranking round; 1415-1715: M ranking round</li>
+            <li class="cursor-pointer" onclick="selectEvent('25/7/2024: Football')">Football: 1700-2300: W group stage (6 matches)</li>
+            <li class="cursor-pointer" onclick="selectEvent('25/7/2024: Handball')">Handball: 0900-1230: W preliminaries (2 matches); 1400-1730: W preliminaries (2 matches); 1900-2230: W preliminaries (2 matches)</li>
+            <li class="cursor-pointer" onclick="selectEvent('25/7/2024: Rugby sevens')">Rugby sevens: 1400-1700: M pool rounds; 2000-2300: M placement matches, quarters</li>
+            
+            <!-- Add more events here -->
+          </ul>
+
+        </div>
+        <div  class="my-4" >
+          <h2 class="text-lg lg:text-xl font-bold text-slate-700">Friday, 26 July</h2>
+          <ul class="list-disc ml-6 text-blue-600">
+            <li class="cursor-pointer" onclick="selectEvent('26/7/2024: Opening Ceremony')">Opening ceremony</li>
+           
+            
+            <!-- Add more events here -->
+          </ul>
+
+        </div>
+
+        <h5 class="mt-6">Events for 3 future dates can be booked once, To book event for further dates, come back later...</h5>
+       
+      </div>
+      <div class="basis-1/2 max-sm:mt-[5%] ">
+        <h2 class="text-xl font-semibold mb-2">Selected Event:</h2>
+        <p id="selectedEvent">No event selected</p>
+        <div class="mt-4">
+          <label for="ticketQuantity" class="block font-semibold">Number of Tickets:</label>
+          <input onchange="pricing()" type="number" id="ticketQuantity" class="w-16 px-2 py-1 border rounded" min="1" value="0">
+        </div>
+
+        <h2 class="text-xl font-semibold mb-2 mt-4">Ticket Price</h2>
+        <p id="price"> Price: ---</p>
+        
+        <button onclick="bookTickets()" class="mt-4 bg-blue-500 hover:bg-blue-600 text-white font-semibold px-4 py-2 rounded">
+         Book Tickets
+        </button>
+      
+      </div>
+    </div>
+  </div>
+
+</main>
+
+
+<hr class="my-[5%] max-sm:my-[10%] bg-slate-800 h-[2px] max-sm:h-[1px]">
+
+
+<footer class="mx-[10%] lg:mx-[15%] mb-[5%] ">
+    
+
+  <div class="flex justify-between max-sm:flex-col ">
+  <div class="flex gap-x-4 self-center justify-self-center">
+      <div>
+          <a href="https://www.instagram.com/Olympics/" target="_blank"> <img class="w-[50%]" src="footericons/skill-icons_instagram.png" alt=""></a>
+      </div>
+       <div>
+          <a href="https://www.linkedin.com/company/international-olympic-committee/?originalSubdomain=ch"  target="_blank"> <img   class="w-[50%]"  src="footericons/devicon_linkedin.png" alt=""></a>
+      </div>
+       <div>
+          <a href="https://www.facebook.com/olympics/"  target="_blank"> <img   class="w-[50%]" src="footericons/logos_facebook.png" alt=""></a>
+      </div>
+      <div>
+          <a href="https://twitter.com/Olympics"  target="_blank"> <img   class="w-[50%]" src="footericons/Vector (3).png" alt=""></a>
+      </div>
+  </div>
+
+  <div class="text-center text-[#405f68]  self-center justify-self-center max-sm:my-4">
+      <p>Copyright &copy; 2023 THECoders <br> All Rights Reserved </p>
+  </div>
+</div>
+
+  </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="toogle.js">
+      
+
+
+
+    </script>
+      <script>
+        let selectedEvent = null;
+    
+        function selectEvent(eventName) {
+          selectedEvent = eventName;
+          document.getElementById('selectedEvent').innerText = eventName;
+        }
+    
+        function bookTickets() {
+          if (!selectedEvent) {
+            alert('Please select an event first.');
+            return;
+          }
+    
+          const ticketQuantity = parseInt(document.getElementById('ticketQuantity').value);
+          if (ticketQuantity < 1) {
+            alert('Please enter a valid ticket quantity.');
+            return;
+          }
+    
+          // Replace this with the actual booking logic (e.g., API call to book tickets)
+          const payPageUrl = `https://shivam-fl.github.io/Olypedia-testing/pay.html`;
+          window.location.href = payPageUrl;
+        }
+
+        let Tprice = document.getElementById('price');
+        let quantity = document.getElementById('ticketQuantity')
+        const rate = Math.floor(Math.random()*100+1)
+        
+
+
+  function pricing() {  
+    if (!selectedEvent) {
+            alert('Please select an event first.');
+          
+          }
+          else{
+        let Tprice = document.getElementById('price');
+        let quantity = document.getElementById('ticketQuantity');
+        const rate = Math.floor(Math.random()*100+1);
+         Tprice.innerText = "Price:-" + (quantity.value*rate) + "€";
+        }
+        }
+  
+
+
+      </script>
+
+</body>
+
+</html>
+
