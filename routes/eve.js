@@ -1,17 +1,11 @@
 const express = require("express")
 const router = express.Router();
+const path = require('path')
 
 router.get('/', (req,res) =>
 {
-      res.send("Event Management")
+      res.sendFile(path.join(__dirname,"../public/comingsoon.html"))
 });
-router.get('/sortGame', (req,res) =>
-{
-      res.send("sort by game")
-});
-router.get('/sortCountry', (req,res) =>
-{
-      res.send("sort by country")
-});
+router.use(express.static('public'))
 
 module.exports = router;
